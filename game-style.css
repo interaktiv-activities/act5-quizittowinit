@@ -1,0 +1,254 @@
+/* FONTS */
+@font-face {
+    font-family: Akura;
+    src: url(FONTS/Akura\ Popo.ttf);
+}
+
+@font-face {
+    font-family: Arvo;
+    src: url(FONTS/Arvo/Arvo-Regular.ttf);
+}
+
+@font-face {
+    font-family: Citrus;
+    src: url(FONTS/Citrus\ Gothic/);
+}
+
+.game-board{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 30px 0px 100px 0px;
+}
+
+.question-prompt{
+    width: 750px;
+    height: 350px; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+    background-image: url(ASSETS/red-frame.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 750px 350px;
+    border: none;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Arvo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    margin: 20px 20px 20px 20px;
+    
+}
+
+.question{
+    width: 530px;
+    height: auto;
+
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+
+.score{
+    font-family: Akura;
+    font-size: 32px;
+    margin: 30px 10px 10px 10px;
+    color: #F2B84B;
+}
+
+.answer-btn-grp{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 850px;
+    height: 300px;
+}
+
+.answer-btn{
+
+    width: 397px;
+    height: 102px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+
+    background-image: url(ASSETS/light-normal.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    
+    font-family: Arvo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: white;
+    
+}
+
+.answer-txt{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+    width: 320px;
+    height: 80px;
+
+
+    font-family: Arvo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: white;
+
+}
+
+.answer-btn:hover{
+    transition-duration: 150ms;
+    transform: translateY(-1.00em);
+}
+
+.answer-btn:active{
+    transition-duration: 150ms;
+    transform: translateY(-0.50em);
+}
+
+@media only screen and (max-width: 768px){
+
+    .game-board{
+        max-width: 450px;
+    }
+    
+    .answer-btn-grp{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    
+        max-width: 400px;
+        height: 470px;
+    }
+    
+    .answer-btn{
+        width: 400px;
+        height: 100px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+    
+        background-image: url(ASSETS/light-normal.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        
+        font-family: Arvo;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: white;
+        
+    }
+    
+    .answer-btn:hover{
+        transition-duration: 150ms;
+        transform: translateY(-1.00em);
+    }
+    
+    .answer-btn:active{
+        transition-duration: 150ms;
+        transform: translateY(-0.50em);
+    }
+    
+    }
+    
+    @media only screen and (max-width: 428px){
+        
+        .game-board{
+            max-width: 400px;
+            
+
+        }
+
+        .question-prompt{
+            width: 380px;
+            height: 250px;
+            background-size:contain;
+        }
+
+        .question{
+            width: 330px;
+            font-size: 14px;
+        }
+
+        .score{
+            font-size: 24px;
+
+        }
+
+        .answer-btn-grp{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 310px;
+
+        }
+
+        .answer-btn{
+            width: 310px;
+            height: 80px;
+        }
+
+        .answer-txt{
+            font-size: 14px;
+        }
+
+        .answer-btn:hover{
+            transition-duration: 150ms;
+            transform: translateY(-1.00em);
+        }
+        
+        .answer-btn:active{
+            transition-duration: 150ms;
+            transform: translateY(-0.50em);
+        }
+        
+
+
+
+
+
+
+
+
+
+
+
+    }

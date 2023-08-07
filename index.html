@@ -1,0 +1,72 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ACT V - Quiz it to Win it!</title>
+        <link href="site-style.css" rel="stylesheet">
+        <link href="game-style.css" rel="stylesheet">
+        <script defer src="script.js"></script>
+    </head>
+
+    <body>
+        <div class="overlay start-screen" id="start-screen">
+            <span class="start-title">Ready to start the show?</span>
+            <span class="start-header">Click the ticket to start the game!</span>
+            <div class="full-ticket" id="start-button">
+                <button class="left-ticket-btn"><img src="ASSETS/START/left-ticket.PNG" class="left-ticket-img" id="left-ticket-img"></button>
+                <button class="right-ticket-btn"><img src="ASSETS/START/right-ticket.PNG" class="right-ticket-img" id="right-ticket-img"></button>
+            </div>
+        </div>
+
+        <div class="header" id="header">
+            <button class="left-header-btn header-btn" id="back-header-btn"><img id="back-btn-img" class="header-btn-img" src="ASSETS/HEADER/back.png"></button>
+            <button class="right-header-btn header-btn" id="mute-header-btn"><img id="mute-btn-img" class="header-btn-img" src="ASSETS/HEADER/unmute.png"></button>
+        </div>
+
+<!-- GAME PROPER -->
+
+        <div class="game-board" id="game-board">
+
+            <div class="question-prompt">
+                <span class="question" id="question">This general average should be 3.000 and above in order to qualify a student for the Latin Honors at the end of the school year.</span>
+
+                <br>
+
+                <span class="score" id="score">Score: 0</span>
+            </div>
+
+            <div class="answer-btn-grp">
+                <div>
+                    <button class="answer-btn" id="answer-btn-1"><span class="answer-txt" id="answer-txt-1">Cumulative Grade Point Average</span></button> 
+                </div>
+                <div>
+                    <button class="answer-btn" id="answer-btn-2"><span class="answer-txt" id="answer-txt-2">Term Grade Point Average</span></button>
+                </div>
+                <div>
+                    <button class="answer-btn" id="answer-btn-3"><span class="answer-txt" id="answer-txt-3">Cumulative Term Average</span></button>
+                </div>
+                <div>
+                    <button class="answer-btn" id="answer-btn-4"><span class="answer-txt" id="answer-txt-4">Term Grade Average</span></button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- OVERLAYS -->
+
+        <div class="overlay end-screen" id="pass-end-screen">
+            <img src="ASSETS/token.png" class="token-img">
+            <div class="end-message">Congratulations! You have earned the</div>
+            <div class="end-title"> INCLUSIVITY BADGE!</div>
+            <div class="end-message"> The secret code for the next Act is UNITY! The show has ended and you can click the button below to head back to the tent!</div>
+            <button class="menu-btn" id="menu-btn"><img class="menu-btn-img" src="ASSETS/menu-btn.png"></button>
+        </div>
+
+        <div class="overlay end-screen" id="fail-end-screen">
+            <div class="end-title">PLEASE TRY AGAIN</div>
+            <div class="end-message">You were unable to reach the minimum passing score. Refresh your the window to try again!</div>
+        </div>
+    </body>
+
+</html>
