@@ -20,7 +20,9 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 30px 0px 100px 0px;
+    padding: 50px;
+    gap: 30px; 
+    
 }
 
 .question-prompt{
@@ -47,7 +49,7 @@
     font-weight: 700;
     line-height: normal;
 
-    margin: 20px 20px 20px 20px;
+    gap: 10px;
     
 }
 
@@ -140,6 +142,19 @@
     .game-board{
         max-width: 450px;
     }
+
+    .question{
+        max-width: 400px;
+    }
+
+    .question-prompt{
+        max-width: 450px;
+        
+        background-size: contain;
+
+        margin: 0px
+    }
+
     
     .answer-btn-grp{
         display: flex;
@@ -149,25 +164,14 @@
         align-items: center;
     
         max-width: 400px;
-        height: 470px;
+        height: 500px;
     }
     
     .answer-btn{
-        width: 400px;
+        max-width: 400px;
+       
         height: 100px;
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-grow: 1;
-    
-        background-image: url(ASSETS/light-normal.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-color: transparent;
-        border: none;
-        
+
         font-family: Arvo;
         font-size: 18px;
         font-style: normal;
@@ -192,42 +196,46 @@
     @media only screen and (max-width: 428px){
         
         .game-board{
-            max-width: 400px;
-            
-
+            max-width: 380px;
+            height: 500px;
+            margin-bottom: 10px; 
         }
 
         .question-prompt{
-            width: 380px;
-            height: 250px;
+            width: 340px;
+            height: 340px;
             background-size:contain;
+            background-position: center;
         }
 
         .question{
-            width: 330px;
-            font-size: 14px;
+            width: 280px;
+            font-size: 12px;
         }
 
         .score{
             font-size: 24px;
-
         }
 
         .answer-btn-grp{
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 310px;
-
+            width: 300px;
+            height: min-content;
+    
         }
 
         .answer-btn{
-            width: 310px;
-            height: 80px;
+            width: 280px;
+            height: auto;
+            background-position: center;
+            
         }
 
         .answer-txt{
-            font-size: 14px;
+            font-size: 10px;
+            width:250px;
         }
 
         .answer-btn:hover{
@@ -239,16 +247,4 @@
             transition-duration: 150ms;
             transform: translateY(-0.50em);
         }
-        
-
-
-
-
-
-
-
-
-
-
-
     }
